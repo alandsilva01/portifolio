@@ -27,6 +27,10 @@
 
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a, li {
   color: var(--corW);
   text-decoration: none;
