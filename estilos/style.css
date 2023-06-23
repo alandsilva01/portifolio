@@ -154,7 +154,6 @@
     height: 100vh;
     background: url(../img/backcabeca.jpg);
     background-size: cover;
-    height: 100;
     
   }
 
@@ -188,6 +187,12 @@
     font-size: 3.2vw;
     line-height: 1.5;
     color: #fff;
+  }
+
+  #projetos {
+    height: 100vh;
+    background: url(../imagens/backnum.jpg);
+    background-size: cover;
   }
 
   @media (min-width: 780px) and (min-height: 615px) {
