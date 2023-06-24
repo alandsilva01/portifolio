@@ -74,6 +74,7 @@
     left: 6%;
     transform: translateY(-50);
     z-index: 2;
+    text-shadow: #000000bd 5px 5px 9px;
   }
 
   .dev {
@@ -148,25 +149,23 @@
   }
 
   #sobre {
-    display: grid;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 3%;
     height: 100vh;
-    background: url(../img/backcabeca.jpg);
-    background-size: cover;
-    
+    background-color: #150429;
   }
 
- .par {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-    
+  .par{
+    background-color: #ffffff09;
+    border-radius: 6%;
+    box-shadow: rgba(76, 187, 238, 0.534) 5px 5px 12px;
   }
 
   .par .gif {
-    margin: 10px auto;
+    margin: 15px auto;
     display: block;
     border: solid 5px black;
     border-radius: 50%;
@@ -183,16 +182,59 @@
     padding-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-    text-shadow: 2px 2px 2px #150429e0;
+    text-shadow: 2px 2px 2px #000000e0;
     font-size: 3.2vw;
     line-height: 1.5;
     color: #fff;
   }
 
   #projetos {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    width: 100%;
     background: url(../imagens/backnum.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .container {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+
+  .par1 {
+    margin: 12px;
+    width: 40px;
+    height: 50px;
+    flex: 1 1 150px;
+    border-radius: 6%;
+    background-color: #ffffff31;
+    box-shadow: black 2px 2px 2px;
+    
+  }
+
+  #contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    height: 100vh;
+    background-color: #290426;
+  }
+
+  footer {
+    background-color: #550548;
+    height: 6vh;
   }
 
   @media (min-width: 780px) and (min-height: 615px) {
