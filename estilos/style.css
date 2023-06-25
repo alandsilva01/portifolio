@@ -156,37 +156,47 @@
     padding: 3%;
     height: 100vh;
     background-color: #150429;
-  }
+}
 
-  .par{
+.par {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 80vh;
     background-color: #ffffff09;
     border-radius: 6%;
     box-shadow: rgba(76, 187, 238, 0.534) 5px 5px 12px;
-  }
+    padding: 5%;
+}
 
-  .par .gif {
+
+.par .gif {
     margin: 15px auto;
-    display: block;
+    display: flex;
     border: solid 5px black;
     border-radius: 50%;
-    width: 35vw;
+    width: 25%;
+    max-width: 250px;
     box-shadow: 0 0 5px var(--corB1),
     0 0 25px var(--corB),
     0 0 50px var(--corB),
     0 0 100px var(--corB);
-  }
-  
-  p {
+}
+
+p {
     padding: 10vw;
     height: auto;
     padding-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     text-shadow: 2px 2px 2px #000000e0;
-    font-size: 3.2vw;
+    font-size: 1.5vw;
     line-height: 1.5;
     color: #fff;
-  }
+    margin: 0;
+}
+
 
   #projetos {
      display: flex;
@@ -202,25 +212,34 @@
     background-position: center center;
   }
 
-  .container {  
+  .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  
+    max-width: 1200px;  
+}
 
-  .par1 {
-    margin: 12px;
-    width: 40px;
-    height: 50px;
-    flex: 1 1 150px;
-    border-radius: 6%;
-    background-color: #ffffff31;
-    box-shadow: black 2px 2px 2px;
-    
-  }
+.par1 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.breve {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: #ffffffa1 2px 2px 2px 2px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.breve:hover {
+  box-shadow: rgba(202, 30, 188, 0.521) 2px 2px 2px 2px;
+  transform: scale(1.05);
+}
 
   #contato {
     display: flex;
@@ -237,14 +256,37 @@
     height: 6vh;
   }
 
-  @media (min-width: 780px) and (min-height: 615px) {
+  @media (max-width: 768px) {
+    .par {
+      height: 80vh;
+    }
+
+    p {
+      font-size: 3vw;
+    }
+
+    .container {
+      flex-direction: row;
+    }
+    
+    .par1 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (min-width: 780px) {
     .gif {
-      max-width: 20vw;
-      max-height: auto;
-      display: none;
+      width: 15vw;
+      height: auto;
     }
     p {
-      font-size: 2vw;
+      font-size: 1.5vw;
+    }
+
+    .dev img {
+      height: 60vh;
+      width: auto;
     }
   }
   
