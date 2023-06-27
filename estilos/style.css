@@ -227,8 +227,8 @@ p {
 }
 
 .breve {
-    max-width: 90%;
-    height: auto;
+    width: 80%;
+    height: 80%;
     border-radius: 10%;
     box-shadow: #ffffffa1 2px 2px 2px 2px;
     cursor: pointer;
