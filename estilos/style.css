@@ -1,6 +1,7 @@
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   body {
@@ -58,6 +59,7 @@
     font-family: Techno, system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: var(--corP2);
     height: 8vh;
+    width: 100vw;
   }
   
   main {
@@ -65,7 +67,7 @@
     background-size: cover;
     background-attachment: fixed;
     height: 92vh;
-     
+    width: 100vw;
   }
 
   .main {
@@ -154,7 +156,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: auto;
+    width: 100vw;
     background-color: #150429;
 }
 
@@ -163,8 +165,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    width: 70vw;
+    height: 60vh;
+    width: 50vw;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.075));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -188,24 +190,22 @@
     0 0 100px var(--corB);
 }
 
-p {
+.parsobre {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     text-shadow: 2px 2px 2px #000000e0;
-    font-size: 1.5vw;
+    font-size: 1rem;
     line-height: 1.5;
     color: #fff;
-    margin: 0;
 }
 
 
   #projetos {
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    width: auto;
+    width: 100vw;
     padding: 6px;
     background: url(../imagens/backnum.jpg);
     background-size: cover;
@@ -214,39 +214,46 @@ p {
     background-position: center center;
   }
 
-  #projetos > h1 {
-    margin-bottom: 100px;
+  .proh1 {
+    display: flex;
+    justify-content: center;
     text-shadow: black 5px 5px 8px;
+    margin-bottom: 15%;
+    
+    
   }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;  
+.container,
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.par1 {
-    flex-basis: 33.33%;
-    max-width: 33.33%;
-    box-sizing: border-box;
-    padding: 10px;
+.card,
+.card2 {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.075));
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10%;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  box-shadow: 0 8px 32px 0 rgba(0, 153, 255, 0.37);
 }
 
 .breve {
-    width: 80%;
-    height: 80%;
-    border-radius: 10%;
-    box-shadow: #ffffffa1 2px 2px 2px 2px;
-    cursor: pointer;
-    transition: box-shadow 0.3s, transform 0.3s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.breve:hover {
-  box-shadow: rgba(202, 30, 188, 0.521) 2px 2px 2px 2px;
-  transform: scale(1.05);
-}
 
   #contato {
     display: flex;
@@ -255,28 +262,38 @@ p {
     align-items: center;
     padding: 3%;
     height: 100vh;
+    width: 100vw;
     background-color: #290426;
   }
 
   footer {
     background-color: #530646;
     height: 6vh;
+    width: 100vw;
   }
 
   @media (max-width: 768px) {
 
-    p {
-      font-size: 3vw;
+    .parsobre {
+      font-size: .8rem;
     }
 
-    .container {
-      flex-direction: row;
+    .par{
+      width: 80vw;
+      height: 70vh;
+    }
+
+    #projetos{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card, .card2 {
+      height: 100px;
+      width: 100px;
     }
     
-    .par1 {
-      flex-basis: 50%;
-      max-width: 50%;
-    }
   }
 
   @media (min-width: 780px) {
@@ -333,7 +350,7 @@ p {
       position: absolute;
       top: 8vh;
       right: 0;
-      width: 50vw;
+      width: 40vw;
       height: 92vh;
       background-color: #150429e0;
       flex-direction: column;

@@ -40,30 +40,35 @@
     <section id="sobre">
         <div class="par">
             <img class="gif" src="img/Mr3W.gif" alt="gif">
-            <p>Olá. <br><br> Me chamo <strong>Alan Silva</strong>, tenho 28 anos. <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro laudantium itaque sapiente similique tenetur aliquam nesciunt dolor culpa possimus, aspernatur ad obcaecati facilis quisquam provident molestias iure ipsa ratione, nulla perspiciatis at eum libero eligendi saepe. Incidunt, jhfjhvf aut non deleniti quibusdam saepe, praesentium tenetur perferendis molestias soluta impedit, illo laudantium nisi qui vel esse consectetur sed delectus architecto fugiat rem cupiditate doloribus. Doloru</p>
+            <p class="parsobre">Olá. <br><br> Me chamo <strong>Alan Silva</strong>, tenho 28 anos. <br>
+                Sempre tive interesse nas áreas tecnológicas. No entanto, infelizmente, ainda não consegui ingressar no mercado. Realizei alguns cursos técnicos voltados para essa área e, nos últimos meses, direcionei meus esforços para a programação. Tenho trabalhado em vários projetos para aprimorar minhas habilidades e conhecimentos. Estou confiante de que estou preparado para contribuir positivamente com sua equipe de programadores, caso haja uma oportunidade de contratação. Sou alguém que aprende facilmente, é comunicativo e está constantemente em busca de aprimoramento.</p>
         </div>
     </section>
     <section id="projetos">
-        <h1>Projetos</h1>
+        
+            <h1 class="proh1">Projetos</h1>
+        
         <div class="container">
-            <div class="par1 upper">
-                <a href="https://alandsilva01.github.io/projeto-cordel/" target="_blank"><img class="breve" src="img/fundoC.jpg" alt="img 1"></a>
+            <div class="card">
+                <h3 class="breve">EM BREVE</h3>
             </div>
-            <div class="par1 upper">
-                <img class="breve" src="img/em breve.gif" alt="">
+            <div class="card">
+                <h3 class="breve">EM BREVE</h3>
             </div>
-            <div class="par1 upper">
-                <a href="https://alandsilva01.github.io/projeto-android/" target="_blank"><img class="breve" src="img/fundoA.jpg" alt="img"></a>
+            <div class="card">
+                <h3 class="breve">EM BREVE</h3>
             </div>
-            <div class="par1 lower">
-                <img class="breve" src="img/em breve.gif" alt="">
+           
+        </div>
+        <div class="container2">
+             <div class="card2">
+                <h3 class="breve">EM BREVE</h3>
             </div>
-            <div class="par1 lower">
-                <a href="https://alandsilva01.github.io/projeto-pokemon/" target="_blank"><img class="breve" src="img/fundoP.jpg" alt=""></a>
+            <div class="card2">
+                <h3 class="breve">EM BREVE</h3>
             </div>
-            <div class="par1 lower">
-                <img class="breve" src="img/em breve.gif" alt="">
+            <div class="card2">
+                <h3 class="breve">EM BREVE</h3>
             </div>
         </div>
     </section>
@@ -84,7 +89,15 @@
             
         });
 
-        VanillaTilt.init(document.querySelectorAll(".breve"), {
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 20,
+            speed: 500,
+            glare: true,
+            "max-glare": 1,
+            
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".card2"), {
             max: 20,
             speed: 500,
             glare: true,
