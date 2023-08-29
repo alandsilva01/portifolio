@@ -219,39 +219,51 @@
     justify-content: center;
     text-shadow: black 5px 5px 8px;
     margin-bottom: 15%;
-    
+    font-size: 9vh 9vw;
     
   }
 
 .container,
 .container2 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .card,
 .card2 {
+  position: relative;
   display: flex;
   margin: 10px;
   padding: 10px;
-  height: 200px;
-  width: 200px;
+  height: 20vh;
+  width: 20vw;
   border-radius: 10%;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.075));
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border-radius: 10%;
   border: 1px solid rgba(0, 0, 0, 0.514);
   box-shadow: 0 8px 32px 0 rgba(0, 153, 255, 0.37);
+  overflow: hidden;
 }
 
+
 .breve {
+  position: relative;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.breve:hover {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 
