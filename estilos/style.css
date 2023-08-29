@@ -194,7 +194,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     text-shadow: 2px 2px 2px #000000e0;
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: 1.5;
     color: #fff;
 }
@@ -259,6 +259,8 @@
   transform: translateY(100px);
   opacity: 0;
   transition: 0.5s;
+  font-family: Techno2, system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 3.7rem;
 }
 
 .breve:hover {
@@ -289,7 +291,7 @@
   @media (max-width: 480px) {
 
     .parsobre {
-      font-size: .7rem;
+      font-size: .6rem;
     }
 
     .par{
@@ -316,6 +318,7 @@
       align-items: center;
       transform: translateY(0px);
       opacity: 1;
+      font-size: 1.6rem;
   }
     
   }
